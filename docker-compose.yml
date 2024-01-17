@@ -18,7 +18,7 @@ services:
     networks:
       - my-network
     volumes:
-      - ./servers.txt:/myapp/servers.txt
+      - /home/sakura/Documents/docker-project/SQL-Demo:/app/server.txt 
     depends_on:
       mysqldb:
         condition: service_healthy
